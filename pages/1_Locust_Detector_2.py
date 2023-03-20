@@ -2,13 +2,14 @@ import pandas as pd
 import streamlit as st
 from joblib import load
 import pywhatkit
+
 st.set_page_config(
     page_title="Locust Detector",
     page_icon=" "
 )
 
 def main():
-    xgb_model = load('bph_prediction2.json')
+    xgb_model = load('locust_detector_2.json')
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
             <h2 style="color:black;text-align:center;">Locust Detection using eXtreme Gradient Boosting</h2>

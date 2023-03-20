@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 def main():
-    xgb_model = load('bph_predictor.json')
+    xgb_model = load('locust_detector.json')
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
             <h2 style="color:black;text-align:center;">Locust Detection using eXtreme Gradient Boosting</h2>
@@ -22,7 +22,7 @@ def main():
     st.markdown("##### Enter the atmospheric conditions \n ")
 
     p1 = st.number_input("temperature in degree celsius",20,40,step=1)
-    p2 = st.number_input("moisture in percentage",60,110,step=1)
+    p2 = st.number_input("moisture in percentage",80,110,step=1)
     p3 = st.number_input("humidity in percentage",60,90,step=1)
     p4 = st.number_input("Nitrogen in Kilogram per hectare",110.00,160.00,step=1.00)
     p5 = st.number_input("Phosphorus in Kilogram per hectare",50.00,100.00,step=1.00)
