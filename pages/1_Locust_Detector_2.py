@@ -12,7 +12,7 @@ def main():
     xgb_model = load('locust_detector_2.json')
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
-            <h2 style="color:black;text-align:center;">Locust Detection using eXtreme Gradient Boosting</h2>
+            <h2 style="color:black;text-align:center;">Locust Detection </h2>
         </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
